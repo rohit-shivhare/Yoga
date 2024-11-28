@@ -65,17 +65,17 @@ const scrollRevealOption = {
     interval: 500,
   });
   
-  // stories container
-  ScrollReveal().reveal(".stories__card", {
-    ...scrollRevealOption,
-    interval: 500,
-  });
+  // // stories container
+  // ScrollReveal().reveal(".stories__card", {
+  //   ...scrollRevealOption,
+  //   interval: 500,
+  // });
   
-  // posts container
-  ScrollReveal().reveal(".posts__card", {
-    ...scrollRevealOption,
-    interval: 500,
-  });
+  // // posts container
+  // ScrollReveal().reveal(".posts__card", {
+  //   ...scrollRevealOption,
+  //   interval: 500,
+  // });
   
   // photos container
   ScrollReveal().reveal(".photos__card", {
