@@ -134,7 +134,7 @@ header::before {
 
 .header__content h1 {
   margin-bottom: 1rem;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 300;
   color: var(--text-dark);
 }
