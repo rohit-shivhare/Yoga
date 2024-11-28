@@ -64,9 +64,3 @@ const scrollRevealOption = {
     ...scrollRevealOption,
     interval: 500,
   });
-  
-  // photos container
-  ScrollReveal().reveal(".photos__card", {
-    duration: 1000,
-    interval: 500,
-  });
