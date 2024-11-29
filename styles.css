@@ -151,7 +151,8 @@ header::before {
 }
 
 .header__image img {
-  max-width: 475px;
+  /* max-width: 475px; */
+  max-width: 600px;
   margin: auto;
 }
 
@@ -345,6 +346,7 @@ header::before {
 
 .footer {
   background-color: var(--primary-color);
+  padding: 1rem 1rem;
 }
 
 .footer__container {
