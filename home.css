@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+    --primary-color: #bb9e59;
+    --primary-color-dark: #ffffff;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --extra-light: #dfd7c5;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 3rem 1rem;
+}
+
+.section__header {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.section__subheader {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--text-light);
+    letter-spacing: 2px;
+}
+
+.btn {
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+/* Nav  */
+nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav__logo img {
+    max-width: 100px;
+}
+
+.nav__logo span {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a {
+    padding: 5px;
+    color: var(--text-light);
+}
+
+.link a:hover {
+    color: var(--primary-color);
+}
+/* Nav END  */
+
+/* Header  */
+header {
+    position: relative;
+}
+
+header::before {
+    position: absolute;
+    content: "";
+    left: -25%;
+    bottom: 0;
+    width: 125%;
+    height: 100%;
+    background-image: linear-gradient(to top, var(--primary-color), transparent);
+    opacity: 0.2;
+}
+
+.header__container {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.header__content {
+    z-index: 1;
+}
+
+.header__content h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--text-dark);
+}
+
+.header__content h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--text-light);
+}
+
+.header__image {
+    z-index: -1;
+}
+
+.header__image img {
+    max-width: 600px;
+    margin: auto;
+}
