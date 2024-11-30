@@ -110,7 +110,7 @@ nav {
 
 /* Nav END  */
 
-/* Header  */
+/* Section-1  */
 header {
     position: relative;
 }
@@ -160,8 +160,7 @@ header::before {
     margin: auto;
 }
 
-/* Hero section  */
-
+/* Section-3  */
 .hero {
     background-color: var(--extra-light);
 }
@@ -199,6 +198,7 @@ header::before {
     color: var(--text-light);
 }
 
+/* Section-2 */
 .classes__grid {
     margin-top: 4rem;
     display: grid;
@@ -226,7 +226,7 @@ header::before {
     bottom: 0;
 }
 
-
+/* Section-4 */
 .stories__grid {
     margin-top: 4rem;
     display: grid;
@@ -296,6 +296,7 @@ header::before {
     color: var(--text-light);
 }
 
+/* Section-5 */
 .banner {
     padding: 5rem 0;
     background-image: linear-gradient(to right, var(--primary-color), transparent),
@@ -324,6 +325,7 @@ header::before {
     color: var(--white);
 }
 
+/* Section-6 */
 .posts {
     background-color: var(--extra-light);
 }
@@ -373,6 +375,7 @@ header::before {
     color: var(--text-light);
 }
 
+/* Section-7 */
 .photos__grid {
     margin-top: 4rem;
     display: grid;
@@ -380,6 +383,7 @@ header::before {
     gap: 2rem;
 }
 
+/* Footer  */
 .footer {
     background-color: var(--primary-color);
     padding: 1rem 1rem;
