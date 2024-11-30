@@ -382,6 +382,7 @@ header::before {
 
 .footer {
     background-color: var(--primary-color);
+    padding: 1rem 1rem;
 }
 
 .footer__container {
