@@ -107,6 +107,7 @@ nav {
 .link a:hover {
     color: var(--primary-color);
 }
+
 /* Nav END  */
 
 /* Header  */
@@ -157,4 +158,70 @@ header::before {
 .header__image img {
     max-width: 600px;
     margin: auto;
+}
+
+/* Hero section  */
+
+.hero {
+    background-color: var(--extra-light);
+}
+
+.hero__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.hero__card span {
+    margin-bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    aspect-ratio: 1;
+    background-color: var(--primary-color-dark);
+    border-radius: 100%;
+}
+
+.hero__card span img {
+    max-width: 40px;
+}
+
+.hero__card h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.hero__card p {
+    line-height: 1.5rem;
+    color: var(--text-light);
+}
+
+.classes__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.classes__image {
+    position: relative;
+    overflow: hidden;
+}
+
+.classes__content {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    background-image: linear-gradient(to top, var(--primary-color), transparent);
+    transition: 0.5s;
+}
+
+.classes__image:hover .classes__content {
+    bottom: 0;
 }
