@@ -23,6 +23,7 @@
             <li class="link"><a href="membership.html">Membership</a></li>
             <li class="link"><a href="#">About</a></li>
             <li class="link"><a href="#">Contact</a></li>
+            <li class="link"><a onclick="toggleOffcanvas()">Profile</a></li>
         </ul>
     </nav>
 
@@ -283,6 +284,20 @@
             </div>
         </div>
     </section>
+
+    <!-- Offcanvas bootstrap profile bar start -->
+    <div class="offcanvas" id="offcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Profile</h5>
+            <button class="btn-close" onclick="toggleOffcanvas()">×</button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                I will not close if you click outside of me.
+            </div>
+        </div>
+    </div>
+    <!-- profile bar end  -->
 
     <!-- Footer  -->
     <footer class="footer" id="contact">

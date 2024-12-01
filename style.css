@@ -618,3 +618,40 @@ header::before {
     background-color: var(--primary-color-dark);
     background-image: linear-gradient(to top, #d1cabb, transparent);
 }
+
+.offcanvas {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    /* Hide offcanvas off the screen */
+    width: 500px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.offcanvas.open {
+    left: 0;
+    /* Show offcanvas */
+}
+
+.offcanvas-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.offcanvas-title {
+    margin: 0;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}

@@ -81,3 +81,9 @@ scrollToTopBtn.onclick = function () {
         behavior: "smooth", // Smooth scroll effect
     });
 };
+
+// Profile bar
+function toggleOffcanvas() {
+    const offcanvas = document.getElementById('offcanvas');
+    offcanvas.classList.toggle('open');
+}
