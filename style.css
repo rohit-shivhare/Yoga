@@ -646,7 +646,8 @@ header::before {
 }
 
 .offcanvas-title {
-    margin: 0;
+    margin: 20px 0px 5px 190px; /* top right bottom left */
+    font-size: 1.8rem;
 }
 
 .btn-close {
@@ -654,4 +655,8 @@ header::before {
     border: none;
     font-size: 1.5em;
     cursor: pointer;
+}
+
+.offcanvas-body {
+    margin: 20px;
 }
