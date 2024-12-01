@@ -665,7 +665,7 @@ header::before {
 .form-container label {
     display: block;
     margin-bottom: 8px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .form-container input[type="text"],
@@ -691,4 +691,21 @@ header::before {
 
 .form-container button:hover {
     background-color: #0056b3;
+}
+
+.form-container .edit-btn {
+    background-color: #28a745;
+}
+
+.form-container .edit-btn:hover {
+    background-color: #218838;
+}
+
+.form-container .form-details {
+    display: none;
+    margin-bottom: 15px;
+}
+
+.form-container .form-details p {
+    margin: 5px 0;
 }

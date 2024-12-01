@@ -87,3 +87,57 @@ function toggleOffcanvas() {
     const offcanvas = document.getElementById('offcanvas');
     offcanvas.classList.toggle('open');
 }
+
+// Profile Form 
+// Form and button references
+const form = document.getElementById('profile-form');
+const submitBtn = document.getElementById('submit-btn');
+const formDetails = document.getElementById('form-details');
+const editBtn = document.getElementById('edit-btn');
+const formSection = document.getElementById('form-section');
+
+// Field references
+const nameField = document.getElementById('name');
+const emailField = document.getElementById('email');
+const mobileField = document.getElementById('mobile');
+const heightField = document.getElementById('height');
+const weightField = document.getElementById('weight');
+const ageField = document.getElementById('age');
+
+const displayName = document.getElementById('display-name');
+const displayEmail = document.getElementById('display-email');
+const displayMobile = document.getElementById('display-mobile');
+const displayHeight = document.getElementById('display-height');
+const displayWeight = document.getElementById('display-weight');
+const displayAge = document.getElementById('display-age');
+
+// Handle form submission
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // Display entered details
+    displayName.textContent = nameField.value;
+    displayEmail.textContent = emailField.value;
+    displayMobile.textContent = mobileField.value;
+    displayHeight.textContent = heightField.value;
+    displayWeight.textContent = weightField.value;
+    displayAge.textContent = ageField.value;
+
+    // Hide form inputs and submit button, show form details and edit button
+    formDetails.style.display = 'block';
+    submitBtn.style.display = 'none';
+    formSection.style.display = 'none';
+    form.querySelectorAll('input').forEach(input => input.disabled = true);
+});
+
+// Handle edit button click
+editBtn.addEventListener('click', function () {
+    // Show form inputs and submit button, hide form details
+    formDetails.style.display = 'none';
+    submitBtn.style.display = 'block';
+    formSection.style.display = 'block';
+    form.querySelectorAll('input').forEach(input => input.disabled = false);
+});
+// Profile Form End
+
+
