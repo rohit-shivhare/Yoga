@@ -557,6 +557,7 @@ header::before {
 
 .membership__grid {
     margin-top: 4rem;
+    margin-bottom: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
