@@ -539,3 +539,61 @@ header::before {
 #scrollToTopBtn:hover {
     background-color: #555;
 }
+
+/* Membership-Section  */
+.membership {
+    background-color: var(--extra-light);
+}
+
+.membership__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.membership__card {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.membership__card h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.membership__card h2 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.membership__card h2 sup {
+    font-size: 1.5rem;
+}
+
+.membership__card h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.membership__card p {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.membership__btn {
+    width: calc(100% - 4rem);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transform: translateY(calc(50% + 2rem));
+}
