@@ -613,3 +613,8 @@ header::before {
 .btn-2 {
     margin-top: 42px;
 }
+
+#membership-details {
+    background-color: var(--primary-color-dark);
+    background-image: linear-gradient(to top, #d1cabb, transparent);
+}
