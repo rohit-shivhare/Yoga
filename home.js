@@ -55,6 +55,12 @@ ScrollReveal().reveal(".photos__card", {
     interval: 500,
 });
 
+// membership container
+ScrollReveal().reveal(".membership__card", {
+    ...scrollRevealOption,
+    interval: 500,
+});
+
 // ScrollToTop Button
 // Get the button element
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
