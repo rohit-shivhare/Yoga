@@ -700,6 +700,12 @@ header::before {
     top: 100px;
     right: 10px;
     cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.edit-img:hover {
+    transform: scale(1.1);/* Slightly enlarge the image */
+    opacity: 0.8;/* Slightly reduce the opacity */
 }
 
 .form-container .form-details {
