@@ -292,9 +292,27 @@
             <button class="btn-close" onclick="toggleOffcanvas()">×</button>
         </div>
         <div class="offcanvas-body">
-            <div>
-                I will not close if you click outside of me.
-            </div>
+            <form class="form-container">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="mobile">Mobile Number</label>
+                <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" name="height" placeholder="Enter your height" required>
+
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </div>
     <!-- profile bar end  -->

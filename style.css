@@ -622,9 +622,9 @@ header::before {
 .offcanvas {
     position: fixed;
     top: 0;
-    left: -500px;
+    left: -400px;
     /* Hide offcanvas off the screen */
-    width: 500px;
+    width: 400px;
     height: 100%;
     background-color: #f8f9fa;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
@@ -646,7 +646,8 @@ header::before {
 }
 
 .offcanvas-title {
-    margin: 20px 0px 5px 190px; /* top right bottom left */
+    margin: 20px 0px 5px 150px;
+    /* top right bottom left */
     font-size: 1.8rem;
 }
 
@@ -659,4 +660,35 @@ header::before {
 
 .offcanvas-body {
     margin: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
 }
