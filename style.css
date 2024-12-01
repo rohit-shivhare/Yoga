@@ -597,3 +597,8 @@ header::before {
     border-radius: 2px;
     transform: translateY(calc(50% + 2rem));
 }
+
+.btn-1,
+.btn-2 {
+    margin-top: 42px;
+}
