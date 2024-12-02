@@ -6,6 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" href="style.css">
     <title>Help | Contact | Feedback</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .faq-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 10px;
+            /* Add space between questions */
+        }
+
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            padding: 15px;
+            background: none;
+            /* Remove background color */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #333;
+            outline: none;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .faq-question:hover {
+            border-color: #007BFF;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            background: #f1f1f1;
+            font-size: 14px;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: -10px;
+            /* Pull answer closer to question */
+        }
+
+        .faq-arrow {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-arrow.rotate {
+            transform: rotate(90deg);
+        }
+    </style>
 </head>
 
 <body>
@@ -26,115 +89,146 @@
     </nav>
 
     <!-- Section-1  -->
-    <section class="section__container classes__container" id="faq">
-        <p class="section__subheader">Help</p>
-        <h2 class="section__header" style="font-size: 2rem;">Frequently Asked Questions!</h2>
+    <!-- <section class="section__container classes__container" id="faq"> -->
+    <p class="section__subheader">Help</p>
+    <h2 class="section__header" style="font-size: 2rem;">Frequently Asked Questions!</h2>
 
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">
-                    What is HTML?
-                    <span class="faq-arrow">▶</span>
-                </button>
-                <div class="faq-answer">
-                    HTML stands for HyperText Markup Language and is used to create webpages.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    What is CSS?
-                    <span class="faq-arrow">▶</span>
-                </button>
-                <div class="faq-answer">
-                    CSS stands for Cascading Style Sheets and is used for styling HTML elements.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    What is JavaScript?
-                    <span class="faq-arrow">▶</span>
-                </button>
-                <div class="faq-answer">
-                    JavaScript is a programming language used to create dynamic content on websites.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    What is HTML?
-                    <span class="faq-arrow">▶</span>
-                </button>
-                <div class="faq-answer">
-                    HTML stands for HyperText Markup Language and is used to create webpages.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    What is CSS?
-                    <span class="faq-arrow">▶</span>
-                </button>
-                <div class="faq-answer">
-                    CSS stands for Cascading Style Sheets and is used for styling HTML elements.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    What is JavaScript?
-                    <span class="faq-arrow">▶</span>
-                </button>
-                <div class="faq-answer">
-                    JavaScript is a programming language used to create dynamic content on websites.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    What is HTML?
-                    <span class="faq-arrow">▶</span>
-                </button>
-                <div class="faq-answer">
-                    HTML stands for HyperText Markup Language and is used to create webpages.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    What is CSS?
-                    <span class="faq-arrow">▶</span>
-                </button>
-                <div class="faq-answer">
-                    CSS stands for Cascading Style Sheets and is used for styling HTML elements.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    What is JavaScript?
-                    <span class="faq-arrow">▶</span>
-                </button>
-                <div class="faq-answer">
-                    JavaScript is a programming language used to create dynamic content on websites.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    What is HTML?
-                    <span class="faq-arrow">▶</span>
-                </button>
-                <div class="faq-answer">
-                    HTML stands for HyperText Markup Language and is used to create webpages.
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    What is CSS?
-                    <span class="faq-arrow">▶</span>
-                </button>
-                <div class="faq-answer">
-                    CSS stands for Cascading Style Sheets and is used for styling HTML elements.
-                </div>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">
+                What is yoga, and how can it benefit me?
+                <span class="faq-arrow">▶</span>
+            </button>
+            <div class="faq-answer">
+                Yoga is a holistic practice that unites the body, mind, and spirit through physical postures, breathing
+                techniques, and meditation. It promotes flexibility, strength, and balance while reducing stress and
+                fostering mental clarity. Practicing yoga regularly can also improve posture, boost energy levels, and
+                enhance overall well-being. Whether you're looking to relax, build strength, or find inner peace, yoga
+                has something to offer everyone.
             </div>
         </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                What is CSS?
+                <span class="faq-arrow">▶</span>
+            </button>
+            <div class="faq-answer">
+                CSS stands for Cascading Style Sheets and is used for styling HTML elements.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                What is JavaScript?
+                <span class="faq-arrow">▶</span>
+            </button>
+            <div class="faq-answer">
+                JavaScript is a programming language used to create dynamic content on websites.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                What is HTML?
+                <span class="faq-arrow">▶</span>
+            </button>
+            <div class="faq-answer">
+                HTML stands for HyperText Markup Language and is used to create webpages.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                What is CSS?
+                <span class="faq-arrow">▶</span>
+            </button>
+            <div class="faq-answer">
+                CSS stands for Cascading Style Sheets and is used for styling HTML elements.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                What is JavaScript?
+                <span class="faq-arrow">▶</span>
+            </button>
+            <div class="faq-answer">
+                JavaScript is a programming language used to create dynamic content on websites.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                What is HTML?
+                <span class="faq-arrow">▶</span>
+            </button>
+            <div class="faq-answer">
+                HTML stands for HyperText Markup Language and is used to create webpages.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                What is CSS?
+                <span class="faq-arrow">▶</span>
+            </button>
+            <div class="faq-answer">
+                CSS stands for Cascading Style Sheets and is used for styling HTML elements.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                What is JavaScript?
+                <span class="faq-arrow">▶</span>
+            </button>
+            <div class="faq-answer">
+                JavaScript is a programming language used to create dynamic content on websites.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                What is HTML?
+                <span class="faq-arrow">▶</span>
+            </button>
+            <div class="faq-answer">
+                HTML stands for HyperText Markup Language and is used to create webpages.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                What is CSS?
+                <span class="faq-arrow">▶</span>
+            </button>
+            <div class="faq-answer">
+                CSS stands for Cascading Style Sheets and is used for styling HTML elements.
+            </div>
+        </div>
+    </div>
 
 
-    </section>
+    <!-- </section> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const faqItems = document.querySelectorAll(".faq-item");
 
+            faqItems.forEach((item) => {
+                const question = item.querySelector(".faq-question");
+                const answer = item.querySelector(".faq-answer");
+                const arrow = item.querySelector(".faq-arrow");
+
+                question.addEventListener("click", () => {
+                    // Close all other answers and reset arrows
+                    faqItems.forEach((otherItem) => {
+                        const otherAnswer = otherItem.querySelector(".faq-answer");
+                        const otherArrow = otherItem.querySelector(".faq-arrow");
+                        if (otherItem !== item) {
+                            otherAnswer.style.display = "none";
+                            otherArrow.classList.remove("rotate");
+                        }
+                    });
+
+                    // Toggle the current answer and arrow
+                    const isVisible = answer.style.display === "block";
+                    answer.style.display = isVisible ? "none" : "block";
+                    arrow.classList.toggle("rotate", !isVisible);
+                });
+            });
+        });
+    </script>
     <script src="home.js"></script>
 </body>
 
