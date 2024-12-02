@@ -622,7 +622,7 @@ header::before {
 .offcanvas {
     position: fixed;
     top: 0;
-    left: -400px;
+    right: -400px;
     /* Hide offcanvas off the screen */
     width: 400px;
     height: 100%;
@@ -633,7 +633,7 @@ header::before {
 }
 
 .offcanvas.open {
-    left: 0;
+    right: 0;
     /* Show offcanvas */
 }
 
@@ -704,8 +704,10 @@ header::before {
 }
 
 .edit-img:hover {
-    transform: scale(1.1);/* Slightly enlarge the image */
-    opacity: 0.8;/* Slightly reduce the opacity */
+    transform: scale(1.1);
+    /* Slightly enlarge the image */
+    opacity: 0.8;
+    /* Slightly reduce the opacity */
 }
 
 .form-container .form-details {
@@ -716,4 +718,10 @@ header::before {
 
 .form-container .form-details p {
     margin: 5px 0;
+}
+
+.gender-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
