@@ -8,16 +8,13 @@
     <title>Help | Contact | Feedback</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
+        .faq__container {
+            background-color: var(--extra-light);
         }
 
         .faq-container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 50px auto;
         }
 
         .faq-item {
@@ -41,10 +38,11 @@
             justify-content: space-between;
             align-items: center;
             transition: border-color 0.3s, box-shadow 0.3s;
+            background-color: var(--primary-color-dark);
         }
 
         .faq-question:hover {
-            border-color: #007BFF;
+            border-color: var(--primary-color);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
@@ -53,7 +51,7 @@
             padding: 15px;
             background: #f1f1f1;
             font-size: 14px;
-            color: #333;
+            color: var(--text-light);
             border: 1px solid #ddd;
             border-radius: 5px;
             margin-top: -10px;
@@ -89,11 +87,11 @@
     </nav>
 
     <!-- Section-1  -->
-    <section class="section__container classes__container" id="faq">
+    <section class="section__container faq__container" id="faq">
         <p class="section__subheader">Help</p>
         <h2 class="section__header" style="font-size: 2rem;">Frequently Asked Questions!</h2>
 
-        <div class="faq-container faq-grid">
+        <div class="faq-container">
             <div class="faq-item">
                 <button class="faq-question">
                     What is yoga, and how can it benefit me?
@@ -153,7 +151,7 @@
                     while building consistency. As you become more comfortable, you can increase your frequency. Even a
                     10-15 minute daily practice can make a big difference in your physical and mental well-being.
                 </div>
-                <div class="faq-item">
+                <div class="faq-item" style="margin-top: 10px;">
                     <button class="faq-question">
                         Do I need any special equipment for yoga?
                         <span class="faq-arrow">▶</span>
