@@ -354,7 +354,7 @@
     <!-- Section-3  -->
     <section class="feedback">
         <h2 class="section__header" style="font-size: 2rem;">Leave Feedback</h2>
-        
+
         <form class="feedback-form" id="feedbackForm">
             <div class="form-group">
                 <label for="name">Name:</label>
@@ -419,7 +419,7 @@
     <!-- Scroll-to-Top Button -->
     <button id="scrollToTopBtn" title="Go to top">↑</button>
 
-
+    <!-- Frequently Asked Question -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const faqItems = document.querySelectorAll(".faq-item");
@@ -448,8 +448,70 @@
             });
         });
     </script>
+    <!-- Main JavaScript  -->
     <script src="home.js"></script>
+    <!-- Chatbot  -->
     <script src="//code.tidio.co/jmb86djfxswoiheo9mz2hm72bff00e3j.js" async></script>
+    <!-- Feedback Form & Local Storage  -->
+    <script>
+        // Initialize variables
+        let selectedRating = 1;
+
+        // Add event listeners to stars
+        const stars = document.querySelectorAll('#rating button');
+        stars.forEach((star, index) => {
+            star.addEventListener('click', function () {
+                selectedRating = this.getAttribute('data-value');
+                // Remove active class from all stars
+                stars.forEach(s => s.classList.remove('active'));
+                // Add active class to selected and all previous stars
+                for (let i = 0; i <= index; i++) {
+                    stars[i].classList.add('active');
+                }
+            });
+        });
+
+        // Load feedbacks from localStorage
+        const feedbackList = document.getElementById('feedbackList');
+        function loadFeedbacks() {
+            const feedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
+            feedbackList.innerHTML = '<h3>Feedbacks</h3>';
+            feedbacks.forEach(feedback => {
+                const feedbackItem = document.createElement('div');
+                feedbackItem.classList.add('feedback-item');
+                feedbackItem.innerHTML = `
+          <p><strong>${feedback.name}</strong> (${feedback.email})</p>
+          <p class="stars">${'★'.repeat(feedback.rating)}</p>
+          <p>${feedback.feedback}</p>
+        `;
+                feedbackList.appendChild(feedbackItem);
+            });
+        }
+
+        loadFeedbacks();
+
+        // Handle form submission
+        document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const feedbackText = document.getElementById('feedback').value.trim();
+
+            const feedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
+            feedbacks.push({ name, email, rating: selectedRating, feedback: feedbackText });
+            localStorage.setItem('feedbacks', JSON.stringify(feedbacks));
+
+            loadFeedbacks();
+            this.reset();
+            selectedRating = 1; // Reset rating
+            stars.forEach(s => s.classList.remove('active'));
+
+            alert(`Thank you, ${name}! Your feedback has been submitted.\n\nRating: ${selectedRating} stars\nFeedback: ${feedbackText}`);
+            this.reset();
+        });
+
+    </script>
 
 </body>
 
