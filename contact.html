@@ -81,6 +81,109 @@
                 margin-top: 50px;
             }
         }
+
+        .feedback {
+            background-color: var(--extra-light);
+            padding: 50px;
+        }
+
+        .feedback-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .feedback-form h2 {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        .rating {
+            display: flex;
+            gap: 5px;
+            margin: 10px 0;
+        }
+
+        .rating button {
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: #ccc;
+            /* Default color */
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .rating button.active {
+            color: #f39c12;
+            /* Highlighted color */
+        }
+
+        .submit-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .feedback-list {
+            max-width: 600px;
+            margin: 20px auto 0;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .feedback-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .feedback-item:last-child {
+            border-bottom: none;
+        }
+
+        .feedback-item .stars {
+            color: #f39c12;
+        }
     </style>
 </head>
 
@@ -254,6 +357,44 @@
     </section>
 
     <!-- Section-3  -->
+    <section class="feedback">
+        <form class="feedback-form" id="feedbackForm">
+            <h2 class="section__header" style="font-size: 2rem;">Leave Feedback</h2>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <div class="rating" id="rating">
+                    <button data-value="1">★</button>
+                    <button data-value="2">★</button>
+                    <button data-value="3">★</button>
+                    <button data-value="4">★</button>
+                    <button data-value="5">★</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" required placeholder="Write your feedback here..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <div class="feedback-list" id="feedbackList">
+        <h3>Feedbacks</h3>
+        <!-- Feedbacks will appear here -->
+    </div>
 
     <!-- Footer  -->
     <footer class="footer" id="contact">
